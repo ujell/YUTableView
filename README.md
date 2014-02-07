@@ -11,7 +11,7 @@ You can directly drag&drop **YUTableView** folder from demo to your project.
 
 #Usage
 ##Data Model
-You must create a YUTableViewItem for all of your objects.
+You must create a YUTableViewItem for all of your items.
 
 ###Properties
 * ```itemData```: This is where you store the custom data of the cell.
@@ -87,7 +87,9 @@ Your view controller should implement "YUTableViewDelegate" and you should set "
 
 ####Displaying only selected subitems
  If you want to display only subitems of the last selected item, you should set **showAllItems** property of YUTableView to NO. 
+ 
 ![1](http://i.imgur.com/exMl16O.png)
+
 To set back button;
 ```objc
 YUTableView * table;
