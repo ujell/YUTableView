@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2047CE1818A3C5B3003843CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2047CE1718A3C5B3003843CC /* Foundation.framework */; };
+		2047CE1A18A3C5B3003843CC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2047CE1918A3C5B3003843CC /* CoreGraphics.framework */; };
+		2047CE1C18A3C5B3003843CC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2047CE1B18A3C5B3003843CC /* UIKit.framework */; };
+		2047CE2218A3C5B3003843CC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2047CE2018A3C5B3003843CC /* InfoPlist.strings */; };
+		2047CE2418A3C5B3003843CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2047CE2318A3C5B3003843CC /* main.m */; };
+		2047CE3A18A3C5B3003843CC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2047CE3918A3C5B3003843CC /* XCTest.framework */; };
+		2047CE3B18A3C5B3003843CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2047CE1718A3C5B3003843CC /* Foundation.framework */; };
+		2047CE3C18A3C5B3003843CC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2047CE1B18A3C5B3003843CC /* UIKit.framework */; };
+		2047CE7418A3C5C3003843CC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2047CE5018A3C5C3003843CC /* AppDelegate.m */; };
+		2047CE7518A3C5C3003843CC /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2047CE5218A3C5C3003843CC /* Main_iPad.storyboard */; };
+		2047CE7618A3C5C3003843CC /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2047CE5418A3C5C3003843CC /* Main_iPhone.storyboard */; };
+		2047CE7718A3C5C3003843CC /* BasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2047CE5918A3C5C3003843CC /* BasicViewController.m */; };
+		2047CE7818A3C5C3003843CC /* ComplexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2047CE5C18A3C5C3003843CC /* ComplexViewController.m */; };
+		2047CE7918A3C5C3003843CC /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2047CE5F18A3C5C3003843CC /* MainViewController.m */; };
+		2047CE7A18A3C5C3003843CC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2047CE6018A3C5C3003843CC /* Images.xcassets */; };
+		2047CE7B18A3C5C3003843CC /* ComplexItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2047CE6418A3C5C3003843CC /* ComplexItem.m */; };
+		2047CE7C18A3C5C3003843CC /* BasicTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2047CE6818A3C5C3003843CC /* BasicTableViewCell.m */; };
+		2047CE7D18A3C5C3003843CC /* ComplexMainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2047CE6B18A3C5C3003843CC /* ComplexMainTableViewCell.m */; };
+		2047CE7E18A3C5C3003843CC /* ComplexSubTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2047CE6D18A3C5C3003843CC /* ComplexSubTableViewCell.m */; };
+		2047CE7F18A3C5C3003843CC /* YUTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2047CE7018A3C5C3003843CC /* YUTableView.m */; };
+		2047CE8018A3C5C3003843CC /* YUTableViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2047CE7318A3C5C3003843CC /* YUTableViewItem.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2047CE3D18A3C5B3003843CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2047CE0C18A3C5B3003843CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2047CE1318A3C5B3003843CC;
+			remoteInfo = YUTableViewDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2047CE1418A3C5B3003843CC /* YUTableViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YUTableViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2047CE1718A3C5B3003843CC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2047CE1918A3C5B3003843CC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2047CE1B18A3C5B3003843CC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2047CE1F18A3C5B3003843CC /* YUTableViewDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YUTableViewDemo-Info.plist"; sourceTree = "<group>"; };
+		2047CE2118A3C5B3003843CC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2047CE2318A3C5B3003843CC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2047CE2518A3C5B3003843CC /* YUTableViewDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YUTableViewDemo-Prefix.pch"; sourceTree = "<group>"; };
+		2047CE3818A3C5B3003843CC /* YUTableViewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YUTableViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2047CE3918A3C5B3003843CC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		2047CE4F18A3C5C3003843CC /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2047CE5018A3C5C3003843CC /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2047CE5318A3C5C3003843CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main_iPad.storyboard; sourceTree = "<group>"; };
+		2047CE5518A3C5C3003843CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main_iPhone.storyboard; sourceTree = "<group>"; };
+		2047CE5818A3C5C3003843CC /* BasicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicViewController.h; sourceTree = "<group>"; };
+		2047CE5918A3C5C3003843CC /* BasicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicViewController.m; sourceTree = "<group>"; };
+		2047CE5B18A3C5C3003843CC /* ComplexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComplexViewController.h; sourceTree = "<group>"; };
+		2047CE5C18A3C5C3003843CC /* ComplexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComplexViewController.m; sourceTree = "<group>"; };
+		2047CE5E18A3C5C3003843CC /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		2047CE5F18A3C5C3003843CC /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		2047CE6018A3C5C3003843CC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2047CE6318A3C5C3003843CC /* ComplexItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComplexItem.h; sourceTree = "<group>"; };
+		2047CE6418A3C5C3003843CC /* ComplexItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComplexItem.m; sourceTree = "<group>"; };
+		2047CE6718A3C5C3003843CC /* BasicTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicTableViewCell.h; sourceTree = "<group>"; };
+		2047CE6818A3C5C3003843CC /* BasicTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicTableViewCell.m; sourceTree = "<group>"; };
+		2047CE6A18A3C5C3003843CC /* ComplexMainTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComplexMainTableViewCell.h; sourceTree = "<group>"; };
+		2047CE6B18A3C5C3003843CC /* ComplexMainTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComplexMainTableViewCell.m; sourceTree = "<group>"; };
+		2047CE6C18A3C5C3003843CC /* ComplexSubTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComplexSubTableViewCell.h; sourceTree = "<group>"; };
+		2047CE6D18A3C5C3003843CC /* ComplexSubTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComplexSubTableViewCell.m; sourceTree = "<group>"; };
+		2047CE6F18A3C5C3003843CC /* YUTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YUTableView.h; sourceTree = "<group>"; };
+		2047CE7018A3C5C3003843CC /* YUTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YUTableView.m; sourceTree = "<group>"; };
+		2047CE7118A3C5C3003843CC /* YUTableViewCellDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YUTableViewCellDelegate.h; sourceTree = "<group>"; };
+		2047CE7218A3C5C3003843CC /* YUTableViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YUTableViewItem.h; sourceTree = "<group>"; };
+		2047CE7318A3C5C3003843CC /* YUTableViewItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YUTableViewItem.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2047CE1118A3C5B3003843CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2047CE1A18A3C5B3003843CC /* CoreGraphics.framework in Frameworks */,
+				2047CE1C18A3C5B3003843CC /* UIKit.framework in Frameworks */,
+				2047CE1818A3C5B3003843CC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2047CE3518A3C5B3003843CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2047CE3A18A3C5B3003843CC /* XCTest.framework in Frameworks */,
+				2047CE3C18A3C5B3003843CC /* UIKit.framework in Frameworks */,
+				2047CE3B18A3C5B3003843CC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2047CE0B18A3C5B3003843CC = {
+			isa = PBXGroup;
+			children = (
+				2047CE1D18A3C5B3003843CC /* YUTableViewDemo */,
+				2047CE1618A3C5B3003843CC /* Frameworks */,
+				2047CE1518A3C5B3003843CC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2047CE1518A3C5B3003843CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2047CE1418A3C5B3003843CC /* YUTableViewDemo.app */,
+				2047CE3818A3C5B3003843CC /* YUTableViewDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2047CE1618A3C5B3003843CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2047CE1718A3C5B3003843CC /* Foundation.framework */,
+				2047CE1918A3C5B3003843CC /* CoreGraphics.framework */,
+				2047CE1B18A3C5B3003843CC /* UIKit.framework */,
+				2047CE3918A3C5B3003843CC /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2047CE1D18A3C5B3003843CC /* YUTableViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				2047CE4F18A3C5C3003843CC /* AppDelegate.h */,
+				2047CE5018A3C5C3003843CC /* AppDelegate.m */,
+				2047CE5218A3C5C3003843CC /* Main_iPad.storyboard */,
+				2047CE5418A3C5C3003843CC /* Main_iPhone.storyboard */,
+				2047CE5618A3C5C3003843CC /* Controller */,
+				2047CE6018A3C5C3003843CC /* Images.xcassets */,
+				2047CE6118A3C5C3003843CC /* Model */,
+				2047CE6518A3C5C3003843CC /* View */,
+				2047CE6E18A3C5C3003843CC /* YUTableView */,
+				2047CE1E18A3C5B3003843CC /* Supporting Files */,
+			);
+			path = YUTableViewDemo;
+			sourceTree = "<group>";
+		};
+		2047CE1E18A3C5B3003843CC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2047CE1F18A3C5B3003843CC /* YUTableViewDemo-Info.plist */,
+				2047CE2018A3C5B3003843CC /* InfoPlist.strings */,
+				2047CE2318A3C5B3003843CC /* main.m */,
+				2047CE2518A3C5B3003843CC /* YUTableViewDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2047CE5618A3C5C3003843CC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2047CE5718A3C5C3003843CC /* Basic */,
+				2047CE5A18A3C5C3003843CC /* Complex */,
+				2047CE5D18A3C5C3003843CC /* Main */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2047CE5718A3C5C3003843CC /* Basic */ = {
+			isa = PBXGroup;
+			children = (
+				2047CE5818A3C5C3003843CC /* BasicViewController.h */,
+				2047CE5918A3C5C3003843CC /* BasicViewController.m */,
+			);
+			path = Basic;
+			sourceTree = "<group>";
+		};
+		2047CE5A18A3C5C3003843CC /* Complex */ = {
+			isa = PBXGroup;
+			children = (
+				2047CE5B18A3C5C3003843CC /* ComplexViewController.h */,
+				2047CE5C18A3C5C3003843CC /* ComplexViewController.m */,
+			);
+			path = Complex;
+			sourceTree = "<group>";
+		};
+		2047CE5D18A3C5C3003843CC /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				2047CE5E18A3C5C3003843CC /* MainViewController.h */,
+				2047CE5F18A3C5C3003843CC /* MainViewController.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		2047CE6118A3C5C3003843CC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2047CE6218A3C5C3003843CC /* Complex */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2047CE6218A3C5C3003843CC /* Complex */ = {
+			isa = PBXGroup;
+			children = (
+				2047CE6318A3C5C3003843CC /* ComplexItem.h */,
+				2047CE6418A3C5C3003843CC /* ComplexItem.m */,
+			);
+			path = Complex;
+			sourceTree = "<group>";
+		};
+		2047CE6518A3C5C3003843CC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2047CE6618A3C5C3003843CC /* Basic */,
+				2047CE6918A3C5C3003843CC /* Complex */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2047CE6618A3C5C3003843CC /* Basic */ = {
+			isa = PBXGroup;
+			children = (
+				2047CE6718A3C5C3003843CC /* BasicTableViewCell.h */,
+				2047CE6818A3C5C3003843CC /* BasicTableViewCell.m */,
+			);
+			path = Basic;
+			sourceTree = "<group>";
+		};
+		2047CE6918A3C5C3003843CC /* Complex */ = {
+			isa = PBXGroup;
+			children = (
+				2047CE6A18A3C5C3003843CC /* ComplexMainTableViewCell.h */,
+				2047CE6B18A3C5C3003843CC /* ComplexMainTableViewCell.m */,
+				2047CE6C18A3C5C3003843CC /* ComplexSubTableViewCell.h */,
+				2047CE6D18A3C5C3003843CC /* ComplexSubTableViewCell.m */,
+			);
+			path = Complex;
+			sourceTree = "<group>";
+		};
+		2047CE6E18A3C5C3003843CC /* YUTableView */ = {
+			isa = PBXGroup;
+			children = (
+				2047CE6F18A3C5C3003843CC /* YUTableView.h */,
+				2047CE7018A3C5C3003843CC /* YUTableView.m */,
+				2047CE7118A3C5C3003843CC /* YUTableViewCellDelegate.h */,
+				2047CE7218A3C5C3003843CC /* YUTableViewItem.h */,
+				2047CE7318A3C5C3003843CC /* YUTableViewItem.m */,
+			);
+			path = YUTableView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2047CE1318A3C5B3003843CC /* YUTableViewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2047CE4918A3C5B3003843CC /* Build configuration list for PBXNativeTarget "YUTableViewDemo" */;
+			buildPhases = (
+				2047CE1018A3C5B3003843CC /* Sources */,
+				2047CE1118A3C5B3003843CC /* Frameworks */,
+				2047CE1218A3C5B3003843CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YUTableViewDemo;
+			productName = YUTableViewDemo;
+			productReference = 2047CE1418A3C5B3003843CC /* YUTableViewDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2047CE3718A3C5B3003843CC /* YUTableViewDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2047CE4C18A3C5B3003843CC /* Build configuration list for PBXNativeTarget "YUTableViewDemoTests" */;
+			buildPhases = (
+				2047CE3418A3C5B3003843CC /* Sources */,
+				2047CE3518A3C5B3003843CC /* Frameworks */,
+				2047CE3618A3C5B3003843CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2047CE3E18A3C5B3003843CC /* PBXTargetDependency */,
+			);
+			name = YUTableViewDemoTests;
+			productName = YUTableViewDemoTests;
+			productReference = 2047CE3818A3C5B3003843CC /* YUTableViewDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2047CE0C18A3C5B3003843CC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Yücel Uzun";
+				TargetAttributes = {
+					2047CE3718A3C5B3003843CC = {
+						TestTargetID = 2047CE1318A3C5B3003843CC;
+					};
+				};
+			};
+			buildConfigurationList = 2047CE0F18A3C5B3003843CC /* Build configuration list for PBXProject "YUTableViewDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2047CE0B18A3C5B3003843CC;
+			productRefGroup = 2047CE1518A3C5B3003843CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2047CE1318A3C5B3003843CC /* YUTableViewDemo */,
+				2047CE3718A3C5B3003843CC /* YUTableViewDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2047CE1218A3C5B3003843CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2047CE2218A3C5B3003843CC /* InfoPlist.strings in Resources */,
+				2047CE7A18A3C5C3003843CC /* Images.xcassets in Resources */,
+				2047CE7518A3C5C3003843CC /* Main_iPad.storyboard in Resources */,
+				2047CE7618A3C5C3003843CC /* Main_iPhone.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2047CE3618A3C5B3003843CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2047CE1018A3C5B3003843CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2047CE7418A3C5C3003843CC /* AppDelegate.m in Sources */,
+				2047CE7B18A3C5C3003843CC /* ComplexItem.m in Sources */,
+				2047CE7818A3C5C3003843CC /* ComplexViewController.m in Sources */,
+				2047CE2418A3C5B3003843CC /* main.m in Sources */,
+				2047CE7C18A3C5C3003843CC /* BasicTableViewCell.m in Sources */,
+				2047CE7D18A3C5C3003843CC /* ComplexMainTableViewCell.m in Sources */,
+				2047CE7918A3C5C3003843CC /* MainViewController.m in Sources */,
+				2047CE7F18A3C5C3003843CC /* YUTableView.m in Sources */,
+				2047CE7E18A3C5C3003843CC /* ComplexSubTableViewCell.m in Sources */,
+				2047CE7718A3C5C3003843CC /* BasicViewController.m in Sources */,
+				2047CE8018A3C5C3003843CC /* YUTableViewItem.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2047CE3418A3C5B3003843CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2047CE3E18A3C5B3003843CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2047CE1318A3C5B3003843CC /* YUTableViewDemo */;
+			targetProxy = 2047CE3D18A3C5B3003843CC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2047CE2018A3C5B3003843CC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2047CE2118A3C5B3003843CC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2047CE5218A3C5C3003843CC /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2047CE5318A3C5C3003843CC /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			path = Base.lproj;
+			sourceTree = "<group>";
+		};
+		2047CE5418A3C5C3003843CC /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2047CE5518A3C5C3003843CC /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			path = Base.lproj;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2047CE4718A3C5B3003843CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2047CE4818A3C5B3003843CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2047CE4A18A3C5B3003843CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YUTableViewDemo/YUTableViewDemo-Prefix.pch";
+				INFOPLIST_FILE = "YUTableViewDemo/YUTableViewDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2047CE4B18A3C5B3003843CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YUTableViewDemo/YUTableViewDemo-Prefix.pch";
+				INFOPLIST_FILE = "YUTableViewDemo/YUTableViewDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		2047CE4D18A3C5B3003843CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/YUTableViewDemo.app/YUTableViewDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YUTableViewDemo/YUTableViewDemo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "YUTableViewDemoTests/YUTableViewDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		2047CE4E18A3C5B3003843CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/YUTableViewDemo.app/YUTableViewDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YUTableViewDemo/YUTableViewDemo-Prefix.pch";
+				INFOPLIST_FILE = "YUTableViewDemoTests/YUTableViewDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2047CE0F18A3C5B3003843CC /* Build configuration list for PBXProject "YUTableViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2047CE4718A3C5B3003843CC /* Debug */,
+				2047CE4818A3C5B3003843CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2047CE4918A3C5B3003843CC /* Build configuration list for PBXNativeTarget "YUTableViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2047CE4A18A3C5B3003843CC /* Debug */,
+				2047CE4B18A3C5B3003843CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2047CE4C18A3C5B3003843CC /* Build configuration list for PBXNativeTarget "YUTableViewDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2047CE4D18A3C5B3003843CC /* Debug */,
+				2047CE4E18A3C5B3003843CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2047CE0C18A3C5B3003843CC /* Project object */;
+}
