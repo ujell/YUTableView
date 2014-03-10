@@ -276,8 +276,9 @@
     }
     else
     {
-        if (item.subItems.count == 0)
+        if (item.subItems == nil || item.subItems.count == 0)
         {
+            _activeSubitem = item;
             [self reloadTable: item.parent];
         }
         else
