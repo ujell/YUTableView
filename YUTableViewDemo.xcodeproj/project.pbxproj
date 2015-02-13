@@ -12,9 +12,6 @@
 		2047CE1C18A3C5B3003843CC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2047CE1B18A3C5B3003843CC /* UIKit.framework */; };
 		2047CE2218A3C5B3003843CC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2047CE2018A3C5B3003843CC /* InfoPlist.strings */; };
 		2047CE2418A3C5B3003843CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2047CE2318A3C5B3003843CC /* main.m */; };
-		2047CE3A18A3C5B3003843CC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2047CE3918A3C5B3003843CC /* XCTest.framework */; };
-		2047CE3B18A3C5B3003843CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2047CE1718A3C5B3003843CC /* Foundation.framework */; };
-		2047CE3C18A3C5B3003843CC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2047CE1B18A3C5B3003843CC /* UIKit.framework */; };
 		2047CE7418A3C5C3003843CC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2047CE5018A3C5C3003843CC /* AppDelegate.m */; };
 		2047CE7518A3C5C3003843CC /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2047CE5218A3C5C3003843CC /* Main_iPad.storyboard */; };
 		2047CE7618A3C5C3003843CC /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2047CE5418A3C5C3003843CC /* Main_iPhone.storyboard */; };
@@ -30,16 +27,6 @@
 		2047CE8018A3C5C3003843CC /* YUTableViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2047CE7318A3C5C3003843CC /* YUTableViewItem.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		2047CE3D18A3C5B3003843CC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2047CE0C18A3C5B3003843CC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2047CE1318A3C5B3003843CC;
-			remoteInfo = YUTableViewDemo;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		2047CE1418A3C5B3003843CC /* YUTableViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YUTableViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2047CE1718A3C5B3003843CC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -49,7 +36,6 @@
 		2047CE2118A3C5B3003843CC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2047CE2318A3C5B3003843CC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2047CE2518A3C5B3003843CC /* YUTableViewDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YUTableViewDemo-Prefix.pch"; sourceTree = "<group>"; };
-		2047CE3818A3C5B3003843CC /* YUTableViewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YUTableViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2047CE3918A3C5B3003843CC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		2047CE4F18A3C5C3003843CC /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2047CE5018A3C5C3003843CC /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -88,16 +74,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2047CE3518A3C5B3003843CC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2047CE3A18A3C5B3003843CC /* XCTest.framework in Frameworks */,
-				2047CE3C18A3C5B3003843CC /* UIKit.framework in Frameworks */,
-				2047CE3B18A3C5B3003843CC /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -114,7 +90,6 @@
 			isa = PBXGroup;
 			children = (
 				2047CE1418A3C5B3003843CC /* YUTableViewDemo.app */,
-				2047CE3818A3C5B3003843CC /* YUTableViewDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -273,24 +248,6 @@
 			productReference = 2047CE1418A3C5B3003843CC /* YUTableViewDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2047CE3718A3C5B3003843CC /* YUTableViewDemoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2047CE4C18A3C5B3003843CC /* Build configuration list for PBXNativeTarget "YUTableViewDemoTests" */;
-			buildPhases = (
-				2047CE3418A3C5B3003843CC /* Sources */,
-				2047CE3518A3C5B3003843CC /* Frameworks */,
-				2047CE3618A3C5B3003843CC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2047CE3E18A3C5B3003843CC /* PBXTargetDependency */,
-			);
-			name = YUTableViewDemoTests;
-			productName = YUTableViewDemoTests;
-			productReference = 2047CE3818A3C5B3003843CC /* YUTableViewDemoTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -299,11 +256,6 @@
 			attributes = {
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Yücel Uzun";
-				TargetAttributes = {
-					2047CE3718A3C5B3003843CC = {
-						TestTargetID = 2047CE1318A3C5B3003843CC;
-					};
-				};
 			};
 			buildConfigurationList = 2047CE0F18A3C5B3003843CC /* Build configuration list for PBXProject "YUTableViewDemo" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -319,7 +271,6 @@
 			projectRoot = "";
 			targets = (
 				2047CE1318A3C5B3003843CC /* YUTableViewDemo */,
-				2047CE3718A3C5B3003843CC /* YUTableViewDemoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -333,13 +284,6 @@
 				2047CE7A18A3C5C3003843CC /* Images.xcassets in Resources */,
 				2047CE7518A3C5C3003843CC /* Main_iPad.storyboard in Resources */,
 				2047CE7618A3C5C3003843CC /* Main_iPhone.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2047CE3618A3C5B3003843CC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,22 +308,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2047CE3418A3C5B3003843CC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		2047CE3E18A3C5B3003843CC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2047CE1318A3C5B3003843CC /* YUTableViewDemo */;
-			targetProxy = 2047CE3D18A3C5B3003843CC /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		2047CE2018A3C5B3003843CC /* InfoPlist.strings */ = {
@@ -511,46 +440,6 @@
 			};
 			name = Release;
 		};
-		2047CE4D18A3C5B3003843CC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/YUTableViewDemo.app/YUTableViewDemo";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "YUTableViewDemo/YUTableViewDemo-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "YUTableViewDemoTests/YUTableViewDemoTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		2047CE4E18A3C5B3003843CC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/YUTableViewDemo.app/YUTableViewDemo";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "YUTableViewDemo/YUTableViewDemo-Prefix.pch";
-				INFOPLIST_FILE = "YUTableViewDemoTests/YUTableViewDemoTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -568,15 +457,6 @@
 			buildConfigurations = (
 				2047CE4A18A3C5B3003843CC /* Debug */,
 				2047CE4B18A3C5B3003843CC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2047CE4C18A3C5B3003843CC /* Build configuration list for PBXNativeTarget "YUTableViewDemoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2047CE4D18A3C5B3003843CC /* Debug */,
-				2047CE4E18A3C5B3003843CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

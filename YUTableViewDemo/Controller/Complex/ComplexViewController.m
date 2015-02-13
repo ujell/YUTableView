@@ -130,14 +130,14 @@
     {
         do
         {
-            randomCell = arc4random_uniform( temp.subItems.count);
+            randomCell = arc4random_uniform( (u_int32_t)  temp.subItems.count);
             temp = temp.subItems [randomCell];
         }
         while (temp.subItems.count > 0);
     }
     else
     {
-        randomCell = arc4random_uniform( temp.subItems.count);
+        randomCell = arc4random_uniform( (u_int32_t) temp.subItems.count);
         temp = temp.subItems [randomCell];
     }
     [_tableView selectItem: temp animate: YES];
