@@ -25,7 +25,7 @@
 @property (nonatomic) BOOL showAllItems;
 
 /** Duration of animations. If duration and "competitionBlock" are not set, default duration will be used. If "competitionBlock" is set, default value is 0.2f */
-@property (nonatomic) CGFloat animationDuration;
+@property (nonatomic) CGFloat animationDuration __deprecated_msg("Animation duration either doesn't work or breaks other stuff so I decided to cancel it.");
 
 /** This block will be executed after animations had finished. */
 @property (nonatomic, strong) void (^competitionBlock) (void);

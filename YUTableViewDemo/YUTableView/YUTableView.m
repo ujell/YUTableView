@@ -223,14 +223,9 @@
         [self deselectRowAtIndexPath: [NSIndexPath indexPathForRow: index inSection:0 ] animated:NO];
     }
     
-    // For some wierd reason iOS 6 can't handle animation duration when inserting/deleting rows.
-    if (_animationDuration == 0 || [[[UIDevice currentDevice] systemVersion] floatValue] < 7.0)
-        _animationDuration = 0.2;
-
     self.userInteractionEnabled = _userInteractionEnabledDuringAnimation;
     
     [CATransaction begin];
-    [CATransaction setAnimationDuration: _animationDuration];
     [CATransaction setCompletionBlock:^{
         if (_scrollToTopWhenAnimationFinished)
             [self scrollRectToVisible: CGRectMake(0, 0, 1, 1) animated: YES];
@@ -240,12 +235,10 @@
         [self reloadData];
     }];
     
-    [UIView animateWithDuration: _animationDuration animations:^{
-        [self beginUpdates];
-        [self deleteRowsAtIndexPaths: pathsToRemove withRowAnimation: _deleteRowAnimation];
-        [self insertRowsAtIndexPaths: pathsToAdd withRowAnimation: _insertRowAnimation];
-        [self endUpdates];
-    }];
+    [self beginUpdates];
+    [self deleteRowsAtIndexPaths: pathsToRemove withRowAnimation: _deleteRowAnimation];
+    [self insertRowsAtIndexPaths: pathsToAdd withRowAnimation: _insertRowAnimation];
+    [self endUpdates];
     
     [CATransaction commit];
 }
