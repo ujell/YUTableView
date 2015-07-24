@@ -14,7 +14,6 @@
 
 @property (weak, nonatomic) IBOutlet UISwitch       * showAllItemsSwitch;
 @property (weak, nonatomic) IBOutlet UISwitch       * scrollToTopSwitch;
-@property (weak, nonatomic) IBOutlet UITextField    * animationDurationTextField;
 @property (weak, nonatomic) IBOutlet UIButton       * insertRowAnimationButton;
 @property (weak, nonatomic) IBOutlet UIButton       * deleteRowAnimationButton;
 @property (weak, nonatomic) IBOutlet UISwitch       * userInteractionSwitch;
@@ -31,7 +30,6 @@
 {
     [super viewDidLoad];
     [self setButtons];
-    _animationDurationTextField.inputAccessoryView = [self inputAccessoryView];
 }
 
 - (void) viewWillAppear:(BOOL)animated
@@ -62,30 +60,8 @@
     _complexButton.layer.masksToBounds                  = YES;
 }
 
-- (UIView *) inputAccessoryView
-{
-    UIToolbar * accView             = [[UIToolbar alloc] init];
-    UIBarButtonItem * doneButton    = [[UIBarButtonItem alloc] initWithTitle: @"Done"
-                                                                       style: UIBarButtonItemStyleDone
-                                                                      target: self
-                                                                      action: @selector(doneClicked)];
-    
-    [doneButton setTitleTextAttributes: @{UITextAttributeTextColor: [UIColor whiteColor]} forState: UIControlStateNormal];
-    UIBarButtonItem * space         = [[UIBarButtonItem alloc] initWithBarButtonSystemItem: UIBarButtonSystemItemFlexibleSpace
-                                                                                    target: nil
-                                                                                    action:nil];
-    [accView setItems: [NSArray arrayWithObjects: space, doneButton, nil]];
-    [accView sizeToFit];
-    accView.barStyle                = UIBarStyleBlackTranslucent;
-    return accView;
-}
-
 #pragma mark - Actions
 
-- (void) doneClicked
-{
-    [self.view endEditing:YES];
-}
 
 - (IBAction)insertRowButtonTouched:(id)sender
 {
@@ -142,14 +118,6 @@
                                                                                             @"deleteAnimation"   : delete,
                                                                                             @"userInt"           : userInt,
                                                                                             @"random"            : random}];
-    if (![_animationDurationTextField.text isEqualToString: @""])
-    {
-        NSNumberFormatter * formatter       = [[NSNumberFormatter alloc] init];
-        [formatter setNumberStyle: NSNumberFormatterDecimalStyle];
-        NSNumber * duration                 = [formatter numberFromString: _animationDurationTextField.text];
-        if (duration != nil)
-            [tableProperties setObject: duration forKey: @"animationDuration"];
-    }
     
     if ([segue.identifier isEqualToString:@"BasicSegue"])
     {

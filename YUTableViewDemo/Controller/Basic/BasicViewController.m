@@ -40,9 +40,6 @@
     _tableView.userInteractionEnabledDuringAnimation    = [_tableProperties [@"userInt"] boolValue];
     _tableView.parentView                               = self;
     
-    if (_tableProperties [@"animationDuration"])
-        _tableView.animationDuration = [_tableProperties [@"animationDuration"] floatValue];
-    
     [_tableView setCellsFromArray: [self createCellItems: 5 root: nil] cellIdentifier: @"BasicTableViewCell"];
     [_tableView setRootItem: [[YUTableViewItem alloc] initWithData: @"Back"]];
 
