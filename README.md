@@ -1,5 +1,7 @@
 YUTableView is subclass of UITableView which adds expandable sub-menu support to it.
 
+If you're using Swift 2, you can check Swift version from [here](https://github.com/ujell/YUTableView-Swift). It's simpler :)
+
 ![1](http://i.imgur.com/QxzluZm.png)
 
 #Installation
@@ -16,16 +18,16 @@ You must create a YUTableViewItem for all of your items.
 ###Properties
 * ```itemData```: This is where you store the custom data of the cell.
 * ```subItems```: A NSMutableArray, which has the subitems of the item. Every object in the array must be kind of YUTableViewItem. If you do not set subItems, it means that item does not have any subitem.
-* ```cellIdentifier```: The identifier of the cell. If you don't set cellIdentifier, default identifier (which is a property of **YUTableView**) will be used. 
-* ```status```: The current status (Selected/Not selected etc.) of the item. 
+* ```cellIdentifier```: The identifier of the cell. If you don't set cellIdentifier, default identifier (which is a property of **YUTableView**) will be used.
+* ```status```: The current status (Selected/Not selected etc.) of the item.
 
 ###How to init
 ```objc
-// Initializing item with data. 
+// Initializing item with data.
 YUTableViewItem * item = [[YUTableViewItem alloc] initWithData: @"Label"];
 // Initializing item with data and cell identifier.
 YUTableViewItem * item2 = [[YUTableViewItem alloc] initWithSubitems: nil data: @"item" identifier: @"Cell"];
-// Initializing item with subitems, data and cell identifier. 
+// Initializing item with subitems, data and cell identifier.
 YUTableViewItem * item3 = [[YUTableViewItem alloc] initWithSubitems: @[item, item2] data: @{@"key":@"value"} identifier: @"Cell2"];
 // Setting subitems of the item.
 YUTableViewItem * item4 = [[YUTableViewItem alloc] initWithData: @"Item"];
@@ -34,7 +36,7 @@ item4.subItems = @[item2, item3];
 
 ##Table
 ###How to init
-First, initialize a YUTableView. You can use interface builder or code, just use YUTableView as a custom class instead of UITableVew. 
+First, initialize a YUTableView. You can use interface builder or code, just use YUTableView as a custom class instead of UITableVew.
 ```objc
 // If you are not using interface builder;
 YUTableView * table = [[YUTableView alloc] initWithFrame: self.view.frame];
@@ -86,8 +88,8 @@ Your view controller should implement "YUTableViewDelegate" and you should set "
 ```
 
 ####Displaying only selected subitems
- If you want to display only subitems of the last selected item, you should set **showAllItems** property of YUTableView to NO. 
- 
+ If you want to display only subitems of the last selected item, you should set **showAllItems** property of YUTableView to NO.
+
 ![1](http://i.imgur.com/exMl16O.png)
 
 To set back button;
@@ -140,7 +142,7 @@ You must create custom class for your cells and this custom class must implement
     NSMutableDictionary * data  = item.itemData;
     self.title.text     = data[@"title"];
     self.label.text     = data[@"label"];
-    
+
     if (item.status == YUTableViewItemStatusSubmenuOpened)
         self.contentView.backgroundColor = [UIColor grayColor];
     else
