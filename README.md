@@ -5,6 +5,11 @@ If you're using Swift 2, you can check Swift version from [here](https://github.
 ![1](http://i.imgur.com/QxzluZm.png)
 
 #Installation
+## CocoaPods
+Just add `pod 'YUTableView', :git => 'https://github.com/ujell/YUTableView.git'` to your `Podfile`
+
+
+##Manual
 You can directly drag&drop **YUTableView** folder from demo to your project.
 
 #Requirements
