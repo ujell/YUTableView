@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.author       = { "yucel" => "yuceluzun@windowslive.com" }
   s.platform     = :ios, "6.0"
   s.source       = { :git => "https://github.com/ujell/YUTableView.git", :tag => "1.0" }
-  s.source_files = "YUTableViewDemo/YUTableView/*.h,m"
+  s.source_files = "YUTableViewDemo/YUTableView/*.{h,m}"
   s.requires_arc = true
 
 end
