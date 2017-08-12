@@ -4,23 +4,23 @@ If you're using Swift 2, you can check Swift version from [here](https://github.
 
 ![1](http://i.imgur.com/QxzluZm.png)
 
-#Installation
+# Installation
 ## CocoaPods
 Just add `pod 'YUTableView', :git => 'https://github.com/ujell/YUTableView.git'` to your `Podfile`
 
 
-##Manual
+## Manual
 You can directly drag&drop **YUTableView** folder from demo to your project.
 
-#Requirements
+#  Requirements
 * ARC
 * iOS 6 + (Should work on iOS 5, not tested)
 
-#Usage
-##Data Model
+# Usage
+## Data Model
 You must create a YUTableViewItem for all of your items.
 
-###Properties
+### Properties
 * ```itemData```: This is where you store the custom data of the cell.
 * ```subItems```: A NSMutableArray, which has the subitems of the item. Every object in the array must be kind of YUTableViewItem. If you do not set subItems, it means that item does not have any subitem.
 * ```cellIdentifier```: The identifier of the cell. If you don't set cellIdentifier, default identifier (which is a property of **YUTableView**) will be used.
@@ -39,8 +39,8 @@ YUTableViewItem * item4 = [[YUTableViewItem alloc] initWithData: @"Item"];
 item4.subItems = @[item2, item3];
 ```
 
-##Table
-###How to init
+## Table
+### How to init
 First, initialize a YUTableView. You can use interface builder or code, just use YUTableView as a custom class instead of UITableVew.
 ```objc
 // If you are not using interface builder;
@@ -55,8 +55,8 @@ In order to set cells you should create your items and add them in an NSArray/NS
  ```
  You don't have to set a default cell identifier but in that case every YUTableViewItem must have an identifier.
 
-###Usage of YUTableView
-####Being notified when user selected cell
+### Usage of YUTableView
+#### Being notified when user selected cell
 Your view controller should implement "YUTableViewDelegate" and you should set "parentView" property of your YUTableView to this view controller.
 ```objc
 @interface BasicViewController () <YUTableViewDelegate>
@@ -76,7 +76,7 @@ Your view controller should implement "YUTableViewDelegate" and you should set "
  }
  ```
 
-####Different cell heights
+#### Different cell heights
 "YUTableViewDelegate" has "heightForItem:" method to provide different cell heights.
 ```objc
  - (CGFloat) heightForItem: (YUTableViewItem *) item
@@ -92,7 +92,7 @@ Your view controller should implement "YUTableViewDelegate" and you should set "
  }
 ```
 
-####Displaying only selected subitems
+#### Displaying only selected subitems
  If you want to display only subitems of the last selected item, you should set **showAllItems** property of YUTableView to NO.
 
 ![1](http://i.imgur.com/exMl16O.png)
@@ -108,7 +108,7 @@ YUTableViewItem * item  = [[YUTableViewItem alloc] initWithData: @"Back"];
 [self.tableView setRootItem: item];
 ```
 
-####Selecting cells programmatically
+#### Selecting cells programmatically
 
  ```objc
 YUTableView * table;
@@ -117,7 +117,7 @@ NSArray * itemList;
 [_tableView selectItem: itemList [0] animate: NO];
 ```
 
-####Setting animation type
+#### Setting animation type
 ```objc
 YUTableView * table;
 //...
@@ -127,7 +127,7 @@ table.insertRowAnimation = UITableViewRowAnimationLeft;
 table.deleteRowAnimation = UITableViewRowAnimationRight;
 ```
 
-####Animation duration and completion
+#### Animation duration and completion
 You can change animation duration of inserting/deleting cells and set a block which will executed after animation was completed.
 NOTE: Animation duration is only works with iOS 7.
 ```objc
@@ -139,7 +139,7 @@ table.competitionBlock = ^(void) {
 };
 ```
 
-##Cells
+## Cells
 You must create custom class for your cells and this custom class must implement **YUTableViewCellDelegate**. "setCellContentsFromItem:" is the method where you set your cell.
 ```objc
 - (void) setCellContentsFromItem: (YUTableViewItem *) item
